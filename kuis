@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Favoritku</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000; /* Warna latar belakang header */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 100px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color:white;
+        }
+        nav a:hover {
+            color: #B8860B;
+        }
+        main {
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #B8860B;
+            color: Dark Golden Rod;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://akcdn.detik.net.id/customthumb/2010/12/09/1025/detik_SafariGarden.jpg.jpg?w=700&q=90" alt="Logo Restoran"> <!-- Ganti "logo.png" dengan path logo Anda -->
+        <h1>Restoran Safari Garden</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di Safari Garden</h2>
+            <i>Restoran ini menawarkan hidangan spesial yang terbuat dari bahan-bahan segar dan berkualitas. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik kepada setiap pelanggan.</i>
+            <img src="https://foto2.sluurpy.com/locali/id/8488349/50654107.jpg" alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/9fe341d6-f29b-4035-9be2-80be7db7ad15_ed397a2e-58b1-478b-ac56-9163769e1322_file20191016-13073-1cbp8tr.jpeg" alt="French Fries" width="100"></td>
+                        <td>French Fries</td>
+                        <td>Rp33.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b297a02f-a8cd-4907-aed4-4dcdc98e118c_57ed50ec-d2d7-494f-908d-632cb99c9d23_Go-Biz_20190916_163513.jpeg" alt="Beef Burger" width="100"></td>
+                        <td>Beef Burger</td>
+                        <td>Rp77.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/14dc0b64-e776-4e46-a4c2-c57490d89c50_cce5362d-ea70-4859-923f-3539b9cf938b_Go-Biz_20190913_173136.jpeg" alt="Jamur Crispy" width="100"></td>
+                        <td>Jamur Crispy</td>
+                        <td>Rp33.000</td>
+                    </tr>
+                    
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fb1baec2-ef02-463f-ba56-39e3211ec686_e970e9e0-6997-49ac-b41f-d8e7a2c98c82_Go-Biz_20190911_163306.jpeg" alt="Tahu Garang" width="100"></td>
+                        <td>Tahu Garang</td>
+                        <td>Rp38.500</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4cf64a82-5d9c-4c54-acd6-35919de51d03_460c42c8-5f28-4bea-984e-ca2158426198_Go-Biz_20190916_132203.jpeg" alt="Pesto Bruchetta" width="100"></td>
+                        <td>Pesto Bruchetta</td>
+                        <td>Rp33.000</td>
+                    </tr>
+                </tbody>
+            </table>
+ <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Minuman</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c19fdf04-c7fd-4e48-8506-65bfea47153f_f5497c77-bb77-4896-8937-f8145ef4411d_file20191014-23785-13cpnp1.jpeg" alt="Hot Lemon Tea" width="100"></td>
+                        <td>Hot Lemon Tea</td>
+                        <td>Rp22.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/99e2362d-c7f3-4ff3-a110-a35ce198011d_05c735b8-dd76-47cb-b134-01c6ffec9445_file20190912-10424-1uguv72.jpeg" alt="Juice Strawberry" width="100"></td>
+                        <td>Juice Strawberry</td>
+                        <td>Rp38.500</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/16cef856-3b1b-4b55-a712-69a9feb52908_528d6dd9-5ebd-403b-92fe-f69cac4cb6b4_master-menu-item-image_1576223480284.jpg" alt="JHot Green Tea" width="100"></td>
+                        <td>Hot Green Tea</td>
+                        <td>Rp33.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5a12a4bc-7768-4e68-9a16-e50cb32aa4ad_db5ec67f-696f-4b2d-b398-7def701aedca_Go-Biz_20190913_180057.jpeg" alt="Fresh Fruits" width="100"></td>
+                        <td>Fresh Fruits</td>
+                        <td>Rp60.500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"saya sangat suka dengan ambiance dari restoran ini, ada live musiknya jg. aneka makanan western dan lokal tersedia yang disajikan dengan penataan yang cukup cantik." – Andi</li>
+                <li>"Ini salah satu tempat favorit buat nongkrong, makanannya banyak variasi dan enak. Nuansa nya juga nyaman dan tenang" – Lila</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Jl. Nipah no. 21, Padang 25118 Indonesia
+</p>
+        <p>Telepon: +62 751 36055 | Email: safarigarden.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://www.facebook.com/safarigarden" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAclBMVEUZd/P////+/v4Ab/Lz9v4AcfPg6v0AafJjmPW3zPoTdfMwe/MAbPKpxPgAbvP8/f8AXvEAZfIAYfHm7v3W4/zu8/7K2fvR3/ykwflPjPWFrfcygPSwyPpRj/WWuPiAqvdAhvR0n/ZilPW80fqOs/h+pfZxDgiVAAAJeUlEQVR4nN3d23qqOhAA4KQQ0IikFAQRRTy9/ytu0N3dqhySyUzot+dq3Vj9F0km5Mi4ZaRX6UlmHe0fuaa2v4XZfFht8nMS2UseESXnfKNmwqhg3yQeFqULL2n2gQUHjFHZtkoQytdzyKTaZmAOEKOKugrRKXdOWNUFkAPDZNcmIqHcOXFzzZxhNnUpBBWlCyHKeuMGsy4lKeXOkeXeASYtGTnlwTkY5x1TTB05odw5UU2KyVahK0oXYWXWEJhg/Dp29lgeIbytT4JR2YIms4yFDBfZBz5G7Su0XphJRNVSO4XqYtKr57iIfYcQ2jlHE1MsnNb8p5DhSbMd0MNcmlmK2HdE5QUPs13NVMS+Q6y2SBh1lc5bsdeQ8qrRDExj/BvqCxg0vNt0xpnEpKf5qv5ThKfJRm0KE5z/iKXVLKZ6nhOY4PBnLJ0msMH8KUurOYxrRjFpOWt6eY/wPFrSxjDp4o9ZpurNCCY9xXP/9veIx9q0YYx/mznt94cYyTeDGLX7k5ZWM9wXGMRs/6iFSW+wnzaEuWAM7dOEFEN96AFMzv6spetDFyaYoCRtyKQUQnhCyvs/7tH+U///Ly77k2cvxr+RJX4pPI815fl0Ot12x93x1v7jtDify6ZiIvY6lcZfCfubtF7MNiGiePHqfLuu8+wpWSi1SYv8sq53t9O5rHQGG5LeRqAPk9MkfhnJRX35nkz6+C9+szZBcdmeNDRRrofxK4pWWSZVnafqifEWjx+w1yjkouopaD0Ykl5Mstpm/rjkO9Rap8bGJx3MmuCNX3h1V7w0JNoYKd/nPN4waYNfyJJDN8aqR9HFMNG8daDfMDq1zyyEqPXKlxmGibeC9opZo6d+UeUmFH2MZOtxTHDAHlfy2tJgQtHHMO/1vfMZo+oY+cHEpW9o0cewuFYjmAK79sfnjanFACOaYhjjH5Fzf9cjNLUYYFi08wcxucAtZLKt+8YWE4yU+RDGXyDn/niraDEsXvgDmBy54x8djSu/KYaFeT9Glbi1X5QFxGKGEaXqxeRfqBbm1SCLGYZ95b0Y5NwvAK0yACOrPgz2g2FbmMUQw76KHgxyvpQH4IMxxYjyHVPgNmVSAmuMMYaF2Rtmgd1bNu1fgjHy9IoJVsjJ/wy1mGNW6Qtmh91bvrjDyOszxkdOmCw0eyGzwbRNgP+EWSKXsraJMfj5/DlMMXK1fMJgTyyFmknm8e3Kf4qtacMqbr8xWYlcZb603mO6IczlqUo+n8M4SYhD9guzxaUwluhUGe4Hp88E5UV9/YNRN+QXGdFMW9p0cMTa4hHf1H+YAruUxbdJDFc53iI2+Shnd8wSe+BPo/7zvEIc1RLLb4x/xZ7DSCZTJg9KzBG66D4F3WGCM/aTSbIJDPd3qNVU3NcIdZgcfXj5a6r7zwvsgaD8gVE6kztmkUyMZLQPBrlkh3t1x2yO6LNLk5gUexIoPm7umKBBn10KpzDo7+iyCe6YAn9uOZrAqBp9DjgsOgxBlWHeOIarBfqK3KStNIz7+FVmEuPjl+x457eYDfZ7GdPA4C/NEeWmxaQES0smMQTrvsO0xWTYDQubB/OVtRiC+j/Pk9lz9oGdi7uYAxPtPphC72WyeTDirJiiWPM3B0a2FPWJ/3dnwbBPxVKCxmwezNeGEfTMZsIkGbv8fzAXZjx8qBOzYMI1w++Ms5kwUc1ItsfNgvGObEGxunQWjDgxig7ATJgFw39NYjNhZMmq/w+mYSuCPzsTprLCiKGYGGrifjj4UQEf6rR7LufFQBymMIehTy4WJ+TpVc1Y5cFQqDHLx4ca/GAQpBa1GP5s5Gp4P+u45W1++SnAXZKVJWbqR5sHh79grSyaZiJMBu3Gt00zPGkSYZbQbnybNOHdGSIMeE5SnBl8VwYR5gD9QW1H8whOxkQYcNJsXwHgL2ckGK7Av6d9OYO/NtNgAvAES7i1GNCgwVzAxT65WAw10WBqOKawGASkwcBb16/UYniWBgNP4p+KKXBTSIHhHPwCIIWymNIgwcCXJHdTGvDJJhJMDvwxj8km+DQgCQa+wLKbBoRP0JJgjuD6f5+gBU+dk2DgWxLuU+fgRQ0EGIutYo9FDeDlJhSYFIyJj77NQiAKTAHOmeF9IRB4iRYFZg9OM48lWjwAjmlQYGpw/v938dwGuN6cAgPeYPG9rNF4vwoZhitwn/l7wSl0KTABJoV3FHO7Rdo/e73QhmfBW19+FmlDl8+vtsuhmBo4H/jYFTq++rN8HryxwYv7I5pY18z9JOr9IPiV+WdjA/6WE9czZ7+3nKBvBnKN+b0ZCH2blvM5zV/btNA30DnGyKcNdNhbGx1jvKetjdibTt1iZHV5wiBvB3aLed0OjLxR2/GTedmojbyF3inmfQs97uEGbjEn/opBPXbCKabn2AmLEev3cInpOxAEdRuYS8xn31EtmIfoOMT0H6LDL3iPxiFm4HgjhXeMjjuMd+g/eArxSDB3mKEjwfgG7bA2Z5j4NHRYG94xeq4wUgweo4e3fdoVZuyAQ7SjJx1hRo+e7A4FRfkWR5jxQ0F5ekb5GjeYieNasQ7SdYKZPEgX6YhjJ5jpI455gHHCuQuMzuHTfI2QbBxgpHwtZP0Httt/kwOM91bIejEb+4JGj9E9Sh/hkgN6jO4lBwjXT5Bj9K+fsL8YhBpjcjGI9alQxJh44L4zmst0aDGS9VWYYQxfWp1uR4qRnuE1R20jYPN9pBhhfAGV3dVglBixM78azOrSNjqMBF3a1l0NCP5KOow3djng2EWHwRnaFSDDROexSyhHr6AMoFdQUmGigTvBdDBgDREmHLdMXttagjo2NJipi06JLtQlwYSj9UUH07ZpAA0FBuGqY9gl1AQY74hwCTXoenB0DNb14BxwcTs2Bu/i9jYuhqcRI2OicqifDMHwwqwZwMWEi2z6FxpgeHqNDIoaJkZ416k7zk0xXO0r/aKGiImqvUbVN8Twj2wR6rZqaBjZFrHRYx2AmDbj1LFmUcPCiHg7nV1gGM6zSq8dQMKElWbNB2E4r7XaARSMiGrDH2eKafvRbJqDgBHsoNuIwTGc70s5xbHGCFm+X2RKgeGbuhTjHEuMEGU92UVGwrQNwbWJxpppK4yMmqtZxbfDcFVcq5GsY4GRYVMX2mkSBdNysu0qGeKAMbK7EhlIscB0nHWT9P8qIMZLmn0Aplhhuqtw8kPvrSsgTJic840FxRLTRXqV3ltpM8fImNXGeeU1/gFq8Ly5gnL8OQAAAABJRU5ErkJggg==" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/safarigarden" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/480px-Instagram_logo_2022.svg.png" alt="Instagram" width="30" height="30">
+            </a>
+             <a href="https://www.twiter.com/safarigarden" target="_blank">
+                <img src="data:image/png;base64,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" alt="Instagram" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.255455938158!2d100.35327247496517!3d-0.9624275990282787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b956a2fef0ab%3A0xbec075a5a363a82!2sSafari%20Garden%20Cafe%20%26%20Restaurant!5e0!3m2!1sid!2sid!4v1731657944761!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
